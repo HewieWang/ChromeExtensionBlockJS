@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Block JS Extension",
+    "version": "1.0",
+    "description": "Block specific JS files from loading",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "<all_urls>",
+        "https://*/*","http://*/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
